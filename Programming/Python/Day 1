@@ -1,0 +1,65 @@
+CCTC Link:
+  https://cctc.cybbh.io/students/students/latest/Day_0_Setup.html
+  
+instance link:
+  https://git.cybbh.space/CCTC/students/-/raw/master/ops_stations/ops_from_snap.yaml
+
+vim config:
+  set tabstop=4
+  set shiftwidth=4
+  set expandtab
+  set number
+  filetype indent on
+  set autoindent
+
+python student guide:
+  https://git.cybbh.space/programming/python/public/-/blob/master/documents/Student_Guide.adoc
+
+python program:   git clone https://git.cybbh.space/programming/python/public.git git
+-------------------------------------------------------------------------------------------------------------------------------------------------
+  *Practical Exercise 0-2*
+  
+  FizzBuzz is an interview question that is said to filter out 99.5% of programming job candidates.
+  Modify deliverable.py so that it takes a number from the user and prints it (the number) if it isn't divisible by 3 or 5. 
+  For multiples of 3 print 'fizz' instead. For multiples of 5 print 'buzz' instead. For multiples of 3 and 5 print 'fizzbuzz'.
+  *END*
+  '''
+  #!/usr/bin/env python3
+  num = input("Enter ur number\n>> ")
+  num = int(num)
+  if num%3 == 0 and num%5 != 0:
+      print("fizz")
+  elif num%5 == 0 and num%3 != 0:
+      print("buzz")
+  elif num%5 == 0 and num%3 == 0:
+      print("fizzbuzz")
+  else:
+      print(num)
+   '''
+   format example:
+    a = 'bob'
+    b = 'susan'
+    'Hi, {}. I am {}'.format(a,b) -> Hi, susan. I am bob
+-------------------------------------------------------------------------------------------------------------------------------------------------
+*Practical Exercise 0-3*
+
+Modify deliverable.py and implement `guess_number` so that it repeatedly asks the user for a number between 0 and 100 inclusive. 
+If the user correctly guesses the value of the given argument `n`, print "WIN" and exit out of the loop. Otherwise indicate whether 
+the guess was "too high" or "too low". Test the deliverable manually or run `python3 check.py` to run the supplied unit tests.
+*END*
+'''
+#!/usr/bin/env python3
+def guess_number(n):
+    while(1):
+        guess = int(input("What is your guess?\n>> "))
+        if guess == n:
+            print("WIN")
+            break    
+        elif guess > n:
+            print("too high")
+        elif guess < n:
+            print("too low")
+        pass
+guess_number(23)
+-------------------------------------------------------------------------------------------------------------------------------------------------
+  
