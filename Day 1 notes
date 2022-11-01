@@ -16,7 +16,7 @@ python student guide:
   https://git.cybbh.space/programming/python/public/-/blob/master/documents/Student_Guide.adoc
 
 python program:   git clone https://git.cybbh.space/programming/python/public.git git
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
   *Practical Exercise 0-2*
   
   FizzBuzz is an interview question that is said to filter out 99.5% of programming job candidates.
@@ -40,7 +40,7 @@ python program:   git clone https://git.cybbh.space/programming/python/public.gi
     a = 'bob'
     b = 'susan'
     'Hi, {}. I am {}'.format(a,b) -> Hi, susan. I am bob
-    
+-------------------------------------------------------------------------------------------------------------------------------------------------
 *Practical Exercise 0-3*
 
 Modify deliverable.py and implement `guess_number` so that it repeatedly asks the user for a number between 0 and 100 inclusive. 
@@ -57,12 +57,11 @@ def guess_number(n):
             break    
         elif guess > n:
             print("too high")
-    
         elif guess < n:
             print("too low")
         pass
 guess_number(23)
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
   
  
  
