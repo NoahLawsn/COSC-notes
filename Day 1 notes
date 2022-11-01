@@ -1,0 +1,44 @@
+CCTC Link:
+  https://cctc.cybbh.io/students/students/latest/Day_0_Setup.html
+  
+instance link:
+  https://git.cybbh.space/CCTC/students/-/raw/master/ops_stations/ops_from_snap.yaml
+
+vim config:
+'''
+Syntax enable
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set number
+filetype indent on
+set autoindent
+'''  
+
+python student guide:
+  https://git.cybbh.space/programming/python/public/-/blob/master/documents/Student_Guide.adoc
+
+python program: 
+prompt -
+*Practical Exercise 0-2*
+FizzBuzz is an interview question that is said to filter out 99.5% of programming job candidates.
+Modify deliverable.py so that it takes a number from the user and prints it (the number) if it isn't divisible by 3 or 5. 
+For multiples of 3 print 'fizz' instead. For multiples of 5 print 'buzz' instead. For multiples of 3 and 5 print 'fizzbuzz'.
+*END*
+'''
+#!/usr/bin/env python3
+num = input("Enter ur number\n>> ")
+num = int(num)
+if num%3 == 0 and num%5 != 0:
+    print("fizz")
+elif num%5 == 0 and num%3 != 0:
+    print("buzz")
+elif num%5 == 0 and num%3 == 0:
+    print("fizzbuzz")
+else:
+    print(num)
+ '''
+ 
+ 
+ 
+ 
