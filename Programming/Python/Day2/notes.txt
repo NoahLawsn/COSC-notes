@@ -3,6 +3,11 @@ CCTC Link:
   
 instance link:
   https://git.cybbh.space/CCTC/students/-/raw/master/ops_stations/ops_from_snap.yaml
+VTA Link:
+  https://vta.cybbh.space/
+  
+  LIN-OPS MACHINE PAWD: pass
+
 
 vim config:
   set tabstop=4
