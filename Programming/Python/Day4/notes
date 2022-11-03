@@ -1,0 +1,46 @@
+going over list comprehension; similar to nested for loops
+
+dictionaries:
+thisdict =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+output:
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+>>> for key in a_dict:
+...     print(key, '->', a_dict[key])
+...
+color -> blue
+fruit -> apple
+pet -> dog
+------------- BIG HELP ----------------
+ 66     TLO: 112-SCRPY007, LSA 2
+ 67     Given a dictionary (catalog) whose keys are product names and values are product
+ 68     prices per unit and a list of tuples (order) of product names and quantities,
+ 69     compute and return the total value of the order.
+ 71     Example catalog:
+ 72     {
+ 73         'AMD Ryzen 5 5600X': 289.99,
+ 74         'Intel Core i9-9900K': 363.50,
+ 75         'AMD Ryzen 9 5900X': 569.99
+ 76     }
+ 78     Example order:
+ 79     [
+ 80         ('AMD Ryzen 5 5600X', 5), 
+ 81         ('Intel Core i9-9900K', 3)
+ 82     ]
+ 84     Example result:
+ 85     2540.45 
+ 87     How the above result was computed:
+ 88     (289.99 * 5) + (363.50 * 3)
+ 89     '''
+ 90     total = 0
+ 91     for item in catalog:
+ 92         for box in order:
+ 93             if item == box[0]:
+ 94                 total = total + (catalog[item] * box[1])
+ 95     return total
+ 98     pass
+----------------
