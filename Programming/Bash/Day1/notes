@@ -1,0 +1,11 @@
+bash commands of note:
+-----------------------------------------------------------
+find: -mmin n   MODIFIED N MINUTES AGO
+      -exec c   EXECUTES COMMAND ON FOUND FILES
+
+ps:   -aux      a-all
+                u-users   
+                x-what executed
+                
+head;tail
+tail <file> | cut -d: -f1   cutout field one (first instance before colon) --complimetnt (shows everything else)
