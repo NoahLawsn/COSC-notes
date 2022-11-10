@@ -1,0 +1,65 @@
+review:
+
+cut     -dchar (delimeter -d" ")
+        -fnum  (field num)
+        
+find    -printf "..." 
+        -iname "..." 
+        -exec $cmd {} \; #escape semicolon is to break the finding loop
+        
+egrep   -horizonatal slices
+        -v (not)  
+        "this | that" |=OR 
+        -A|B|Cn gets n lines around found item 
+        -o is only matching
+        
+brace expansion {1..100}  #1-100
+
+order of operations - 7?
+------------------------------
+cmds:
+
+alias - alias originalCmd='cmd to shorten'
+      - unalias to get rid of aliases
+
+awk   -vertical slices
+awk -F: '{print $1}'         displays 1st field delimited by a ":"
+awk '{print $2}'             displays 2nd field, delimited automatically by space
+awk '{print $0}'             displays all string data that matches
+awk -F: '($3 == 0) {print $1}' /etc/passwd
+                            displays 1st field (username) IF the 3rd field (UID) is equal to "0"
+awk '{print $NF}'           displays only the last field of every line
+#can sort order unlike cut
+
+sed   -stream editor (good for substitution)
+        
+sort  -
+uniq  - sort content before running to have it uniq properly 
+
+conditionals  -
+command substitution  -
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+Exercise data
+----------------------------------------------------------------------------------------------------------------------------------
+6
+--------------------------
+7
+--------------------------
+8
+#08 - BASH Activity "The one about dmesg"
+#using awk:
+dmesg | egrep "CPU|BIOS" | egrep -iv "reserved|usable" | awk '{gsub(/^[[[:space:]]*[0-9]\.[0-9]*]/,"");print}'
+
+#using sed:
+dmesg | egrep "CPU|BIOS" | egrep -iv "usable|reserved" | sed "s/^[[[:space:]]*[0-9]\.[0-9]*]//"
+
+#using cut:
+dmesg | egrep "CPU|BIOS" | egrep -iv "usable|reserved" | cut -d] -f2-
+--------------------------
+9 GO OVER
+--------------------------
+10
+--------------------------
+----------------------------------------------------------------------------------------------------------------------------------
