@@ -1,0 +1,6 @@
+Variables Overview:
+----------------------------------------------------------------------
+
+me=Noah   (no spaces)
+echo $me  (reference with a dollar sign)
+
