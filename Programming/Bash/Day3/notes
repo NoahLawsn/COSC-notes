@@ -3,4 +3,20 @@ Variables Overview:
 
 me=Noah   (no spaces)
 echo $me  (reference with a dollar sign)
+----------------------------------------------------------------------
+writing functions:
+#!/bin/sh
+func_name()
+{
+commands
+}
 
+or
+
+func_name() {commands}
+
+#calling functions does not require ()
+
+Questions:
+----------------------------------------------------------------------
+-  ask about adding arguments to a .sh    i.e. netstat -ano
