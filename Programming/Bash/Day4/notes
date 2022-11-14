@@ -1,0 +1,32 @@
+For loops
+----------------------------------------------------------------------------------------------------------
+
+for i in {1..10}
+do
+  echo "Hello World Iteration: $i"
+done
+
+break & continue
+----------------------------------------------------------------------------------------------------------
+break >> jumps OUT of the loop
+continue >> goes to next iteration in loop
+
+while and until
+----------------------------------------------------------------------------------------------------------
+while: runs while statement == true
+until: runs unil statement == true
+
+(in/de)crement example:
+----------------------------------------------------------------------------------------------------------
+increment: ((counter++)) ; ((counter=$counter+1))     #i++ ; i=i+1 ; i+=1
+decrement: ((counter--)) ; ((counter=$counter-1))     #i-- ; i=i-1 ; i-=1
+
+functions and while loops
+----------------------------------------------------------------------------------------------------------
+function func_name () {
+  counter=0
+  while [[ $counter -le 10 ]] ; do
+    ((counter++))
+    ...
+    ... ; done
+}
