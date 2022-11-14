@@ -20,3 +20,7 @@ func_name() {commands}
 Questions:
 ----------------------------------------------------------------------
 -  ask about adding arguments to a .sh    i.e. netstat -ano
+----------------------------------------------------------------------
+
+for finding options within find and -printf 
+  >>> man find | egrep "\s%"
